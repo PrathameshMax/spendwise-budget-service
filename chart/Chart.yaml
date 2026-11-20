@@ -1,0 +1,13 @@
+apiVersion: v2
+name: budget-service
+description: "SpendWise budget-service — Budgets, cap decisions, gRPC budget summaries"
+type: application
+# Base version. The pipeline packages every main build as
+# <version>-g<short commit> with the image digest written into values.yaml.
+version: 1.0.0
+appVersion: "main"
+home: https://github.com/PrathameshMax/spendwise-budget-service
+sources:
+  - https://github.com/PrathameshMax/spendwise-budget-service
+maintainers:
+  - name: PrathameshMax
