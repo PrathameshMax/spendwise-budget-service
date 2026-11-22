@@ -6,6 +6,17 @@ spring:
       enabled: false
   config:
     import: ""
+  kafka:
+    listener:
+      auto-startup: false
+
+eureka:
+  client:
+    enabled: false
+
+grpc:
+  server:
+    port: 0
 
 spendwise:
   security:
@@ -13,3 +24,6 @@ spendwise:
       issuer: http://localhost:8180/realms/spendwise
       jwk-set-uri: http://localhost:8180/realms/spendwise/protocol/openid-connect/certs
       audience: spendwise-api
+  kafka:
+    topics:
+      transaction-events: transaction-events
